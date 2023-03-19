@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+<link rel="stylesheet" 
+ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<style>
+    .navbar {
+        background-color: #d9edf7;
+    }
+</style>
+
+<body>
+
+    <!-- create navigation bar ( header) -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+               <h2>Oauth2.0</h2>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br><br><br><br><br>
+    <!-- Create HTML mail form -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+
+                <!-- success message -->
+                <div th:if="${param.success}">
+                  <div class="alert alert-info">You've successfully registered
+                        to our awesome app!</div>
+                </div>
+
+                <h1>Send Mail</h1>
+
+               <form th:action="@{/mail}" method="post" 
+                             th:object="${user}">
+                    <div class="form-group">
+                        <label class="control-label" for="recipient"> 
+                             To </label>
+                        <input id="firstName" class="form-control" 
+                                 th:field="*{recipient}" required
+                            autofocus="autofocus" />
+                            
+                            <div class="form-group">
+                        <label class="control-label" for="ccList"> 
+                             Cc </label>
+                        <input id="firstName" class="form-control" 
+                                 th:field="*{ccList}" required
+                            autofocus="autofocus" />
+                             </div>   
+                               <div class="form-group">
+                        <label class="control-label" for="bccList"> 
+                             Bcc </label>
+                        <input id="firstName" class="form-control" 
+                                 th:field="*{bccList}" required
+                            autofocus="autofocus" />
+                    </div>
+                      <div class="form-group">
+                        <label class="control-label" for="msgBody"> 
+                             MsgBody </label>
+                        <input id="firstName" class="form-control" 
+                                 th:field="*{msgBody}" required
+                            autofocus="autofocus" />
+                                </div>
+                                 <div class="form-group">
+                        <label class="control-label" for="subject"> 
+                             Subject </label>
+                        <input id="firstName" class="form-control" 
+                                 th:field="*{subject}" required
+                            autofocus="autofocus" />
+                                </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">
+                          Send Mail</button>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

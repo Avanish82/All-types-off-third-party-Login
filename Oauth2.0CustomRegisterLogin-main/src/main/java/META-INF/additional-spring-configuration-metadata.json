@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "spring.cloud.azure.active-directory.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.cloud.azure.active-directory.enabled'"
+  },
+  {
+    "name": "spring.cloud.azure.active-directory.profile.tenant-id",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.cloud.azure.active-directory.profile.tenant-id'"
+  },
+  {
+    "name": "spring.cloud.azure.active-directory.credential.client-id",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.cloud.azure.active-directory.credential.client-id'"
+  },
+  {
+    "name": "spring.cloud.azure.active-directory.credential.redirect-uri",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.cloud.azure.active-directory.credential.redirect-uri'"
+  },
+  {
+    "name": "spring.cloud.azure.active-directory.credential.client-secret",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.cloud.azure.active-directory.credential.client-secret'"
+  },
+  {
+    "name": "spring.cloud.azure.active-directory.user-group.allowed-group-names",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.cloud.azure.active-directory.user-group.allowed-group-names'"
+  },
+  {
+    "name": "spring.cloud.azure.active-directory.scope",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.cloud.azure.active-directory.scope'"
+  }
+]}
